@@ -1,7 +1,6 @@
-# Grouping is the point: this repo pins dependencies exactly, and packages
-# can peer-pin each other to the same exact version. A single-package bump
-# splits such pairs and fails the install, so dependabot must bump related
-# packages together in one pull request.
+# Grouping is the point: single-package bumps against this fork's large dev
+# tree arrive as an endless stream of one-line lockfile PRs. Group them so
+# each cycle is one reviewable pull request per update type.
 version: 2
 updates:
   - package-ecosystem: "npm"
